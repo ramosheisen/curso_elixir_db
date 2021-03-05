@@ -77,7 +77,7 @@ defmodule CursoElixirDb.HelperExplodingTopicsTest do
     @update_attrs %{description: "some updated description", growth: "some updated growth", searches: "some updated searches", titles: "some updated titles"}
     @invalid_attrs %{description: nil, growth: nil, searches: nil, titles: nil}
 
-    def exploding_topics_fixture(attrs \\ %{}) do
+    def exploding_topics_fixture(attrs \\ %ExplodingTopics{}) do
       {:ok, exploding_topics} =
         attrs
         |> Enum.into(@valid_attrs)
