@@ -20,8 +20,9 @@ defmodule CursoElixirDbWeb.Router do
 
     get "/", PageController, :index
 
-    #resources "/exploding_topics", ExplodingTopicsController
     live "/exploding_topics", ExplodingTopicsLive
+    resources "/exploding_topics", ExplodingTopicsController
+    resources "/accounts", AccountsController
   end
 
   # Other scopes may use custom stacks.
