@@ -1,0 +1,30 @@
+<h1>Listing Exploding topics</h1>
+
+<button phx-click="inc_clean">Limpiar</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titles</th>
+      <th>Description</th>
+      <th>Searches</th>
+      <th>Growth</th>
+      <th>Actions</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for exploding_topics <- @exploding_topics do %>
+    <tr>
+      <td><%= exploding_topics.titles %></td>
+      <td><%= exploding_topics.description %></td>
+      <td><%= exploding_topics.searches %></td>
+      <td><%= exploding_topics.growth %></td>
+      <td>
+        <button phx-click="inc_delete" phx-value-id="<%= exploding_topics.id %>">Eliminar</button>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>

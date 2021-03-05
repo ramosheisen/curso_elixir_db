@@ -1,0 +1,28 @@
+<h1>Show Exploding topics</h1>
+
+<ul>
+
+  <li>
+    <strong>Titles:</strong>
+    <%= @exploding_topics.titles %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @exploding_topics.description %>
+  </li>
+
+  <li>
+    <strong>Searches:</strong>
+    <%= @exploding_topics.searches %>
+  </li>
+
+  <li>
+    <strong>Growth:</strong>
+    <%= @exploding_topics.growth %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.exploding_topics_path(@conn, :edit, @exploding_topics) %></span>
+<span><%= link "Back", to: Routes.exploding_topics_path(@conn, :index) %></span>
