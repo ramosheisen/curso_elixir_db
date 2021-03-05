@@ -3,7 +3,7 @@ defmodule CursoElixirDb.HelperExplodingTopicsTest do
 
   alias CursoElixirDb.HelperExplodingTopics
 
-  describe "exploding_topics" do
+  describe "exploding_topics/ block 1" do
     alias CursoElixirDb.HelperExplodingTopics.ExplodingTopics
 
     @valid_attrs %{description: "some description", email: "some email", growth: "some growth", searches: "some searches", titles: "some titles"}
@@ -70,7 +70,7 @@ defmodule CursoElixirDb.HelperExplodingTopicsTest do
     end
   end
 
-  describe "exploding_topics" do
+  describe "exploding_topics/ block 2" do
     alias CursoElixirDb.HelperExplodingTopics.ExplodingTopics
 
     @valid_attrs %{description: "some description", growth: "some growth", searches: "some searches", titles: "some titles"}
